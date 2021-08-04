@@ -1,0 +1,76 @@
+body { 
+    background-color: grey;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(46, 81, 162);
+    border-radius: 5px;
+}
+#header img {
+    width: auto;
+}
+button {
+    position: relative;
+    background-color: oldlace;
+    border: none;
+    border-radius: 5px;
+    height: 3rem;
+    width: max-content;
+    color: whitesmoke;
+    font-size: 18px;
+    justify-self: center;
+}
+button:hover{
+    background-color: grey;
+    border: whitesmoke solid 1px;
+    color: whitesmoke;
+}
+.submit {
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+    height: 2rem;
+    width: max-content;
+    color: black;
+    font-size: 18px;
+    justify-self: center;
+    font-family: monospace;
+    margin: 3px;
+}
+.submit:hover{
+    background-color: black;
+    border: white;
+    color: white;
+}
+
+.input-text{
+    border-radius: 5px;
+    height: 2rem;
+    width: 30%;
+    font-size: 18px;
+    font-family: monospace;
+    margin: 3px;
+}
+
+#banner {
+    color: whitesmoke;
+    font-size: 15px;
+    font-family: monospace;
+    position: relative;
+    background-color: rgb(46, 81, 162);
+    border-radius: 5px;
+    width: fit-content;
+    margin: 3px;
+    text-align: center;
+}
+.card {
+    border: whitesmoke;
+    padding: 1rem;
+    width: 15rem;
+    height: 25rem;
+    display: inline-grid;
+    margin: 1rem 2rem;
+    box-shadow: 3px 4px rgb(46, 81, 162);
+}
