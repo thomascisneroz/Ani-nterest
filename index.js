@@ -94,19 +94,44 @@ displayFiltered = (bigObj) => {
     liCard()
 }
 
-liCard = () => {
-    const liDelete = document.getElementsByTagName('note-card')
-    liDelete.addEventListener('click', (e) => {
-        (e)
-        document.getElementsByTagName('button').remove()
-    })
-    }
+// liCard = () => {
+//     let liDelete = document.querySelectorAll('li')
+//     liDelete.addEventListener('click', () => {
+//         document.querySelectorAll('.delete-btn').remove()
+//     })
+// }
 
 // const liDelete = document.querySelector('li')
-// liCard = () => {
-// const liDelete = document.querySelector('li')
-// liDelete.addEventListener('click', (e) => {
-//     e.preventDefault()
-//     document.querySelector('li').remove(liDelete)
+liCard = () => {
+const liDelete = document.querySelector('li')
+liDelete.addEventListener('click', (e) => {
+    e.preventDefault()
+    document.querySelector('li').remove(liDelete)
+})
+}
+
+// displayFiltered = (anime, filterForm) => {
+//     let card = document.createElement('div')
+//     card.innerHTML =  `
+//         <div class="card" name ="note-card">
+//             <h2>${anime.title}</h2>
+//             <img src="${anime.image_url}"></img>
+//             <button class ="delete-btn" id = "${anime.mal_id}">Delete</button>
+//         </div >
+//     `
+    
+//     filterForm.append(card)
+    
+// }
+
+// document.querySelector('#comment').addEventListener('keyup', e => {
+//     const searchString = e.target.value
+//     const filteredAnime = bigObj.filter( anime => {
+//         return anime.title.toLowerCase().includes(searchString)
+//     })
+//     const filterForm = document.querySelector('#filtering')
+//     filteredAnime.forEach((anime) => displayFiltered(anime, filterForm))            
 // })
+// })
+
 // }
