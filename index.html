@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="index.css">
 
     <script type="text/javascript" src="index.js" defer></script>
 
@@ -18,23 +18,34 @@
 
     <div id="banner">What to watch?</div>
         <div id="anime-search">
-            <form class ="search">
+            <form class ="search-anime">
                 <input
                 type = "text"
-                name = "name"
+                name = "comment"
+                id="comment"
                 placeholder="Enter Anime..."
                 class= "input-text"
                 />
-                <br />
+
+                <input
+                type = "text"
+                name = "notes"
+                id = "written-note"
+                placeholder="notes..."
+                class = "input-text"
+                />
                 <input
                 type="submit"
-                name="submit"
-                value="Search"
-                class="submit"
+                value ="Add note"
+                class ="submit"
                 />
+
             </form>
         </div>
-
+        <div id="notes">
+            <h2>side-notes</h2>
+        </div>
+        <form id="filtering"></form>
     <div id="watch-later"></div>
     <div id="random-animes"></div>
     <script type="text/javascript" src="index.js"></script>

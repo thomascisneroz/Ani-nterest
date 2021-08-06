@@ -13,14 +13,16 @@ body {
 }
 button {
     position: relative;
-    background-color: oldlace;
+    background-color: white;
     border: none;
     border-radius: 5px;
     height: 3rem;
     width: max-content;
-    color: whitesmoke;
+    color: grey;
     font-size: 18px;
     justify-self: center;
+    font-family: monospace;
+    
 }
 button:hover{
     background-color: grey;
@@ -33,7 +35,7 @@ button:hover{
     border-radius: 5px;
     height: 2rem;
     width: max-content;
-    color: black;
+    color: grey;
     font-size: 18px;
     justify-self: center;
     font-family: monospace;
@@ -58,19 +60,53 @@ button:hover{
     color: whitesmoke;
     font-size: 15px;
     font-family: monospace;
-    position: relative;
+    position: static;
     background-color: rgb(46, 81, 162);
     border-radius: 5px;
     width: fit-content;
     margin: 3px;
     text-align: center;
+    display: flex;
 }
 .card {
-    border: whitesmoke;
+    background-color: white;
+    border: grey 1px;
     padding: 1rem;
     width: 15rem;
-    height: 25rem;
+    height: auto;
     display: inline-grid;
     margin: 1rem 2rem;
-    box-shadow: 3px 4px rgb(46, 81, 162);
+    box-shadow: 5px 8px rgb(46, 81, 162);
+    text-align: center;
+    font-family: monospace;
+    font-size: x-large;
+    border-radius: 8px;
+    
+}
+
+.anime-display {
+    justify-self: center;
+    height: 12rem;
+    width: auto;
+}
+
+.title{
+    color: oldlace;
+    background-color: rgb(46, 81, 162);
+    margin: 1rem 2rem;
+    border-radius: 5px;
+}
+
+#watch-later {
+    background-color: cornflowerblue;
+}
+
+.comment-card {
+    background-color: white;
+    text-align: center;
+    box-shadow: rgb(46, 81, 162);
+    width: fit-content;
+    position: static;
+    font-family: monospace;
+    font-size: x-large;
 }
